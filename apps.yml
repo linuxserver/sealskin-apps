@@ -1,0 +1,1430 @@
+extension_groups:
+  common_image_files: &common_image_files
+    - jpg
+    - jpeg
+    - png
+    - gif
+    - bmp
+    - tiff
+    - webp
+  raw_image_files: &raw_image_files
+    - cr2
+    - nef
+    - arw
+    - dng
+    - orf
+    - raf
+  vector_image_files: &vector_image_files
+    - svg
+    - ai
+    - eps
+    - cdr
+  audio_files: &audio_files
+    - mp3
+    - wav
+    - flac
+    - ogg
+    - aac
+    - m4a
+  video_files: &video_files
+    - mp4
+    - mkv
+    - mov
+    - avi
+    - webm
+    - flv
+  ms_office_files: &ms_office_files
+    - docx
+    - xlsx
+    - pptx
+  open_document_files: &open_document_files
+    - odt
+    - ods
+    - odp
+    - odg
+  ebook_files: &ebook_files
+    - epub
+    - mobi
+    - azw3
+    - cbz
+    - cbr
+  cad_3d_files: &cad_3d_files
+    - stl
+    - obj
+    - 3mf
+    - step
+    - iges
+  disc_image_files: &disc_image_files
+    - iso
+    - bin
+    - cue
+    - img
+    - nrg
+    - mdf
+    - chd
+  archive_files: &archive_files
+    - zip
+    - 7z
+    - rar
+    - tar
+    - gz
+    - bz2
+  code_files: &code_files
+    - txt
+    - md
+    - py
+    - js
+    - ts
+    - html
+    - css
+    - scss
+    - json
+    - yaml
+    - yml
+    - toml
+    - xml
+    - sh
+    - bash
+    - java
+    - c
+    - cpp
+    - h
+    - cs
+    - go
+    - rs
+    - rb
+    - php
+
+apps:
+- id: "altus"
+  name: "Altus"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/altus-logo.png"
+  url: "https://github.com/linuxserver/docker-altus"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/altus:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "ardour"
+  name: "Ardour"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ardour-logo.png"
+  url: "https://github.com/linuxserver/docker-ardour"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/ardour:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - ardour
+      - *audio_files
+- id: "audacity"
+  name: "Audacity"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png"
+  url: "https://github.com/linuxserver/docker-audacity"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/audacity:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - aup3
+      - *audio_files
+- id: "bambustudio"
+  name: "BambuStudio"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bambustudio-logo.png"
+  url: "https://github.com/linuxserver/docker-bambustudio"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/bambustudio:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - *cad_3d_files
+- id: "blender"
+  name: "Blender"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/blender-logo.png"
+  url: "https://github.com/linuxserver/docker-blender"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/blender:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - blend
+      - fbx
+      - glb
+      - gltf
+      - dae
+      - *cad_3d_files
+- id: "boinc"
+  name: "BOINC"
+  logo: "https://raw.githubusercontent.com/BOINC/boinc/master/doc/logo/boinc_logo_black.jpg"
+  url: "https://github.com/linuxserver/docker-boinc"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/boinc:latest"
+    port: 8080
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "brave"
+  name: "Brave"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/brave-logo.png"
+  url: "https://github.com/linuxserver/docker-brave"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/brave:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    url_support: true
+    open_support: false
+    extensions: []
+- id: "calibre"
+  name: "Calibre"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png"
+  url: "https://github.com/linuxserver/docker-calibre"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/calibre:latest"
+    port: 8080
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - pdf
+      - *ebook_files
+- id: "calligra"
+  name: "Calligra"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calligra-logo.png"
+  url: "https://github.com/linuxserver/docker-calligra"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/calligra:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - *open_document_files
+      - *ms_office_files
+- id: "chrome"
+  name: "Chrome"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chrome-logo.png"
+  url: "https://github.com/linuxserver/docker-chrome"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/chrome:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    url_support: true
+    open_support: false
+    extensions: []
+- id: "chromium"
+  name: "Chromium"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png"
+  url: "https://github.com/linuxserver/docker-chromium"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/chromium:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    url_support: true
+    open_support: false
+    extensions: []
+- id: "cura"
+  name: "Cura"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cura-logo.png"
+  url: "https://github.com/linuxserver/docker-cura"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/cura:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - gcode
+      - *cad_3d_files
+- id: "darktable"
+  name: "Darktable"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/darktable-logo.png"
+  url: "https://github.com/linuxserver/docker-darktable"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/darktable:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - xmp
+      - *raw_image_files
+      - *common_image_files
+- id: "digikam"
+  name: "Digikam"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam.png"
+  url: "https://github.com/linuxserver/docker-digikam"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/digikam:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - *common_image_files
+      - *raw_image_files
+- id: "dogwalk"
+  name: "Dogwalk"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dogwalk-logo.png"
+  url: "https://github.com/linuxserver/docker-dogwalk"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/dogwalk:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "dolphin"
+  name: "Dolphin"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dolphin-logo.png"
+  url: "https://github.com/linuxserver/docker-dolphin"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/dolphin:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - gcz
+      - wbfs
+      - rvz
+      - *disc_image_files
+- id: "doublecommander"
+  name: "DoubleCommander"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png"
+  url: "https://github.com/linuxserver/docker-doublecommander"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/doublecommander:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - *archive_files
+- id: "duckstation"
+  name: "Duckstation"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckstation-logo.png"
+  url: "https://github.com/linuxserver/docker-duckstation"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/duckstation:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - *disc_image_files
+- id: "ferdium"
+  name: "Ferdium"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ferdium-logo.png"
+  url: "https://github.com/linuxserver/docker-ferdium"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/ferdium:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "filezilla"
+  name: "Filezilla"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/filezilla-logo.png"
+  url: "https://github.com/linuxserver/docker-filezilla"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/filezilla:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "firefox"
+  name: "Firefox"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/firefox-logo.png"
+  url: "https://github.com/linuxserver/docker-firefox"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/firefox:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    url_support: true
+    open_support: false
+    extensions: []
+- id: "flycast"
+  name: "Flycast"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/flycast-logo.png"
+  url: "https://github.com/linuxserver/docker-flycast"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/flycast:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - cdi
+      - gdi
+      - *disc_image_files
+- id: "freecad"
+  name: "FreeCAD"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/freecad-logo.png"
+  url: "https://github.com/linuxserver/docker-freecad"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/freecad:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - fcstd
+      - *cad_3d_files
+- id: "gimp"
+  name: "GIMP"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gimp-logo.png"
+  url: "https://github.com/linuxserver/docker-gimp"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/gimp:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - xcf
+      - psd
+      - *common_image_files
+      - *vector_image_files
+- id: "github-desktop"
+  name: "GitHub Desktop"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/github-desktop-icon.png"
+  url: "https://github.com/linuxserver/docker-github-desktop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/github-desktop:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "gitqlient"
+  name: "GitQlient"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gitqlient-icon.png"
+  url: "https://github.com/linuxserver/docker-gitqlient"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/gitqlient:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "gzdoom"
+  name: "GZDoom"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gzdoom-logo.png"
+  url: "https://github.com/linuxserver/docker-gzdoom"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/gzdoom:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - wad
+      - pk3
+      - iwad
+- id: "inkscape"
+  name: "Inkscape"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/inkscape-logo.png"
+  url: "https://github.com/linuxserver/docker-inkscape"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/inkscape:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - pdf
+      - *vector_image_files
+- id: "joplin"
+  name: "Joplin"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/joplin-logo.png"
+  url: "https://github.com/linuxserver/docker-joplin"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/joplin:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - jex
+      - md
+- id: "kali-linux"
+  name: "Kali Linux"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kali-logo.png"
+  url: "https://github.com/linuxserver/docker-kali-linux"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/kali-linux:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "kdenlive"
+  name: "Kdenlive"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kdenlive-logo.png"
+  url: "https://github.com/linuxserver/docker-kdenlive"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/kdenlive:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - kdenlive
+      - *video_files
+      - *audio_files
+      - *common_image_files
+- id: "keepassxc"
+  name: "KeePassXC"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/keepassxc-logo.png"
+  url: "https://github.com/linuxserver/docker-keepassxc"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/keepassxc:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - kdbx
+- id: "kicad"
+  name: "KiCad"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kicad-logo.png"
+  url: "https://github.com/linuxserver/docker-kicad"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/kicad:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - kicad_pcb
+      - kicad_sch
+      - kicad_pro
+- id: "krita"
+  name: "Krita"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/krita-logo.png"
+  url: "https://github.com/linuxserver/docker-krita"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/krita:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - kra
+      - kpp
+      - psd
+      - *common_image_files
+- id: "libreoffice"
+  name: "LibreOffice"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/libreoffice-logo.png"
+  url: "https://github.com/linuxserver/docker-libreoffice"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/libreoffice:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - pdf
+      - csv
+      - *open_document_files
+      - *ms_office_files
+- id: "librewolf"
+  name: "Librewolf"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librewolf-logo.png"
+  url: "https://github.com/linuxserver/docker-librewolf"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/librewolf:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    url_support: true
+    open_support: false
+    extensions: []
+- id: "lollypop"
+  name: "Lollypop"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lollypop-icon.png"
+  url: "https://github.com/linuxserver/docker-lollypop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/lollypop:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - *audio_files
+- id: "mame"
+  name: "MAME"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mame-logo.png"
+  url: "https://github.com/linuxserver/docker-mame"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/mame:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - zip
+      - 7z
+      - chd
+- id: "mediaelch"
+  name: "MediaElch"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mediaelch-logo.png"
+  url: "https://github.com/linuxserver/docker-mediaelch"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/mediaelch:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "msedge"
+  name: "MSEdge"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/edge-logo.png"
+  url: "https://github.com/linuxserver/docker-msedge"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/msedge:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    url_support: true
+    open_support: false
+    extensions: []
+- id: "mullvad-browser"
+  name: "Mullvad Browser"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mullvad-browser-logo.png"
+  url: "https://github.com/linuxserver/docker-mullvad-browser"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/mullvad-browser:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    url_support: true
+    open_support: false
+    extensions: []
+- id: "mysql-workbench"
+  name: "MySQL Workbench"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-icon.png"
+  url: "https://github.com/linuxserver/docker-mysql-workbench"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/mysql-workbench:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - mwb
+      - sql
+- id: "obsidian"
+  name: "Obsidian"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/obsidian-logo.png"
+  url: "https://github.com/linuxserver/docker-obsidian"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/obsidian:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - md
+- id: "onlyoffice"
+  name: "OnlyOffice"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/onlyoffice-logo.png"
+  url: "https://github.com/linuxserver/docker-onlyoffice"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/onlyoffice:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - pdf
+      - csv
+      - *ms_office_files
+      - *open_document_files
+- id: "opera"
+  name: "Opera"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/opera-icon.png"
+  url: "https://github.com/linuxserver/docker-opera"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/opera:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    url_support: true
+    open_support: false
+    extensions: []
+- id: "pcsx2"
+  name: "PCSX2"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pcsx2-logo.png"
+  url: "https://github.com/linuxserver/docker-pcsx2"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/pcsx2:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - *disc_image_files
+- id: "pidgin"
+  name: "Pidgin"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pidgin-logo.png"
+  url: "https://github.com/linuxserver/docker-pidgin"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/pidgin:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "qdirstat"
+  name: "QDirStat"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qdirstat-logo.png"
+  url: "https://github.com/linuxserver/docker-qdirstat"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/qdirstat:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "rawtherapee"
+  name: "RawTherapee"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rawtherapee-logo.png"
+  url: "https://github.com/linuxserver/docker-rawtherapee"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/rawtherapee:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - pp3
+      - *raw_image_files
+      - *common_image_files
+- id: "remmina"
+  name: "Remmina"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/remmina-icon.png"
+  url: "https://github.com/linuxserver/docker-remmina"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/remmina:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - remmina
+      - rdp
+      - vnc
+- id: "retroarch"
+  name: "RetroArch"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/retroarch-logo.png"
+  url: "https://github.com/linuxserver/docker-retroarch"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/retroarch:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - nes
+      - sfc
+      - smc
+      - gb
+      - gbc
+      - gba
+      - md
+      - smd
+      - gen
+      - n64
+      - z64
+      - *disc_image_files
+      - *archive_files
+- id: "rpcs3"
+  name: "RPCS3"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rpcs3-logo.png"
+  url: "https://github.com/linuxserver/docker-rpcs3"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/rpcs3:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - pkg
+      - rap
+      - *disc_image_files
+- id: "rustdesk"
+  name: "RustDesk"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rustdesk-logo.png"
+  url: "https://github.com/linuxserver/docker-rustdesk"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/rustdesk:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "shotcut"
+  name: "Shotcut"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/shotcut-logo.png"
+  url: "https://github.com/linuxserver/docker-shotcut"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/shotcut:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - mlt
+      - *video_files
+      - *audio_files
+      - *common_image_files
+- id: "spotube"
+  name: "Spotube"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/spotube-logo.png"
+  url: "https://github.com/linuxserver/docker-spotube"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/spotube:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "sqlitebrowser"
+  name: "SQLiteBrowser"
+  logo: "https://raw.githubusercontent.com/linuxserver/proot-apps/refs/heads/master/metadata/img/sqlitebrowser.svg"
+  url: "https://github.com/linuxserver/docker-sqlitebrowser"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/sqlitebrowser:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - db
+      - sqlite
+      - sqlite3
+      - db3
+- id: "ungoogled-chromium"
+  name: "Ungoogled Chromium"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ungoogled-chromium-logo.png"
+  url: "https://github.com/linuxserver/docker-ungoogled-chromium"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/ungoogled-chromium:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    url_support: true
+    open_support: false
+    extensions: []
+- id: "vscodium"
+  name: "VSCodium"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscodium-icon.png"
+  url: "https://github.com/linuxserver/docker-vscodium"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/vscodium:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - *code_files
+- id: "webcord"
+  name: "Webcord"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webcord-icon.png"
+  url: "https://github.com/linuxserver/docker-webcord"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webcord:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "webtop-xfce-alpine"
+  name: "XFCE Alpine"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-alpine-i3"
+  name: "i3 Alpine"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:alpine-i3"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-alpine-mate"
+  name: "MATE Alpine"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:alpine-mate"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-arch-i3"
+  name: "i3 Arch"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:arch-i3"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-arch-kde"
+  name: "KDE Arch"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:arch-kde"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-arch-mate"
+  name: "MATE Arch"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:arch-mate"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-arch-xfce"
+  name: "XFCE Arch"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:arch-xfce"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-debian-i3"
+  name: "i3 Debian"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:debian-i3"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-debian-kde"
+  name: "KDE Debian"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:debian-kde"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-debian-mate"
+  name: "MATE Debian"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:debian-mate"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-debian-xfce"
+  name: "XFCE Debian"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:debian-xfce"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-el-i3"
+  name: "i3 Enterprise Linux"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:el-i3"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-el-mate"
+  name: "MATE Enterprise Linux"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:el-mate"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-el-xfce"
+  name: "XFCE Enterprise Linux"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:el-xfce"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-fedora-i3"
+  name: "i3 Fedora"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:fedora-i3"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-fedora-kde"
+  name: "KDE Fedora"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:fedora-kde"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-fedora-mate"
+  name: "MATE Fedora"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:fedora-mate"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-fedora-xfce"
+  name: "XFCE Fedora"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:fedora-xfce"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-ubuntu-i3"
+  name: "i3 Ubuntu"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:ubuntu-i3"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-ubuntu-kde"
+  name: "KDE Ubuntu"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:ubuntu-kde"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-ubuntu-mate"
+  name: "MATE Ubuntu"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:ubuntu-mate"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "webtop-ubuntu-xfce"
+  name: "XFCE Ubuntu"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:ubuntu-xfce"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "wireshark"
+  name: "Wireshark"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireshark-icon.png"
+  url: "https://github.com/linuxserver/docker-wireshark"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/wireshark:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - pcap
+      - pcapng
+      - cap
+- id: "wps-office"
+  name: "WPS Office"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wps-office-icon.png"
+  url: "https://github.com/linuxserver/docker-wps-office"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/wps-office:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - pdf
+      - *ms_office_files
+      - *open_document_files
+- id: "xemu"
+  name: "Xemu"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/xemu-logo.png"
+  url: "https://github.com/linuxserver/docker-xemu"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/xemu:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - xiso
+      - *disc_image_files
+- id: "yaak"
+  name: "Yaak"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/yaak-logo.png"
+  url: "https://github.com/linuxserver/docker-yaak"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/yaak:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "zen"
+  name: "Zen"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/zen-logo.png"
+  url: "https://github.com/linuxserver/docker-zen"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/zen:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "zotero"
+  name: "Zotero"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/zotero-icon.png"
+  url: "https://github.com/linuxserver/docker-zotero"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/zotero:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    url_support: false
+    open_support: true
+    extensions:
+      - ris
+      - bib
+      - rdf
