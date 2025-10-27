@@ -8,11 +8,5 @@ if [ ! -f "${HOME}/.config/rpcs3/input_configs/global/Default.yml" ]; then
     "${HOME}/.config/rpcs3/input_configs/global/Default.yml"
 fi
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
 # Run rpcs3
-/opt/rpcs3/AppRun "${ARGS[@]}"
+/opt/rpcs3/AppRun $SEALSKIN_FILE $SEALSKIN_URL

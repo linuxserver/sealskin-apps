@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-QDIRSTAT_DESKTOP="Xfce" qdirstat "${ARGS[@]}"
+QDIRSTAT_DESKTOP="Xfce" qdirstat $SEALSKIN_FILE $SEALSKIN_URL

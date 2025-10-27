@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-lollypop "${ARGS[@]}"
+lollypop $SEALSKIN_FILE $SEALSKIN_URL

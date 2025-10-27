@@ -9,10 +9,4 @@ if [ ! -d "${HOME}/.config/retroarch" ]; then
   fi
 fi
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-xterm -e /usr/bin/retroarch -f "${ARGS[@]}"
+xterm -e /usr/bin/retroarch -f $SEALSKIN_FILE $SEALSKIN_URL

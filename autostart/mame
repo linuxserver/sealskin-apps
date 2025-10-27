@@ -8,13 +8,5 @@ if [ ! -f "${HOME}/.mame/mame.ini" ]; then
     "${HOME}/.mame/mame.ini"
 fi
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ROM_NAME=$(basename "$SEALSKIN_FILE")
-    ROM_NAME="${ROM_NAME%.*}"
-    ARGS+=("$ROM_NAME")
-fi
-
 # Run MAME
-xterm -e /usr/games/mame "${ARGS[@]}"
+xterm -e /usr/games/mame $SEALSKIN_FILE $SEALSKIN_URL

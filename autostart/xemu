@@ -1,10 +1,4 @@
 #!/bin/bash
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("-dvd_path" "$SEALSKIN_FILE")
-fi
-
 # Run xemu
-xterm -e /opt/xemu/AppRun "${ARGS[@]}"
+xterm -e /opt/xemu/AppRun $SEALSKIN_FILE $SEALSKIN_URL

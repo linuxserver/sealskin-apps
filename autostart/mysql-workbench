@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("--open" "$SEALSKIN_FILE")
-fi
-
-mysql-workbench "${ARGS[@]}"
+mysql-workbench $SEALSKIN_FILE $SEALSKIN_URL

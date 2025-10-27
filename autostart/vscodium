@@ -1,10 +1,4 @@
 #! /bin/bash
 xdg-mime default thunar.desktop inode/directory
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-dbus-launch codium "${ARGS[@]}"
+dbus-launch codium $SEALSKIN_FILE $SEALSKIN_URL

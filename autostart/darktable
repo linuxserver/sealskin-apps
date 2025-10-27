@@ -1,10 +1,4 @@
 rm -f $HOME/.config/darktable/library.db.lock
 rm -f $HOME/.config/darktable/data.db.lock
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-xterm -e darktable "${ARGS[@]}"
+xterm -e darktable $SEALSKIN_FILE $SEALSKIN_URL

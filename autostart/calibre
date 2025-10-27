@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-/usr/bin/calibre $CLI_ARGS "${ARGS[@]}"
+/usr/bin/calibre $CLI_ARGS $SEALSKIN_FILE $SEALSKIN_URL

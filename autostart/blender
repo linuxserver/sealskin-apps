@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-DRI_PRIME=1 blender "${ARGS[@]}"
+DRI_PRIME=1 blender $SEALSKIN_FILE $SEALSKIN_URL

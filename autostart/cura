@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-/opt/cura/AppRun "${ARGS[@]}"
+/opt/cura/AppRun $SEALSKIN_FILE $SEALSKIN_URL

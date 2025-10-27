@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-/opt/digikam/AppRun "${ARGS[@]}"
+/opt/digikam/AppRun $SEALSKIN_FILE $SEALSKIN_URL

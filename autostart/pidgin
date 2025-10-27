@@ -1,7 +1,1 @@
-# Handle URL opening
-ARGS=()
-if [ -n "$SEALSKIN_URL" ]; then
-    ARGS+=("$SEALSKIN_URL")
-fi
-
-pidgin "${ARGS[@]}"
+pidgin $SEALSKIN_FILE $SEALSKIN_URL

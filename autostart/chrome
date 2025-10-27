@@ -1,11 +1,3 @@
 #!/bin/bash
 
-# Handle file/URL opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-elif [ -n "$SEALSKIN_URL" ]; then
-    ARGS+=("$SEALSKIN_URL")
-fi
-
-wrapped-chrome ${CHROME_CLI} "${ARGS[@]}"
+wrapped-chrome ${CHROME_CLI} $SEALSKIN_FILE $SEALSKIN_URL

@@ -6,12 +6,6 @@ if [ ! -f $HOME/.config/tint2/tint2rc ]; then
     cp /defaults/tint2rc $HOME/.config/tint2/tint2rc
 fi
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
 # Start UI
 tint2 &
-zotero "${ARGS[@]}"
+zotero $SEALSKIN_FILE $SEALSKIN_URL

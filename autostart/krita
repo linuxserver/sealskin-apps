@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-PYTHONHOME=/opt/krita/usr krita "${ARGS[@]}"
+PYTHONHOME=/opt/krita/usr krita $SEALSKIN_FILE $SEALSKIN_URL

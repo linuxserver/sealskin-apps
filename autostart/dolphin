@@ -6,10 +6,4 @@ if [ ! -f "${HOME}/.config/dolphin-emu/GCPadNew.ini" ]; then
   cp /defaults/GCPadNew.ini "${HOME}/.config/dolphin-emu/"
 fi
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-xterm -e /usr/games/dolphin-emu ${DOLPHIN_CLI} "${ARGS[@]}"
+xterm -e /usr/games/dolphin-emu ${DOLPHIN_CLI} $SEALSKIN_FILE $SEALSKIN_URL

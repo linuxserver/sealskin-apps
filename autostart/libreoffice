@@ -6,14 +6,6 @@ if [[ ! -f $HOME/.config/tint2/tint2rc ]]; then
     cp /defaults/tint2rc $HOME/.config/tint2/tint2rc
 fi
 
-# Handle file/URL opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-elif [ -n "$SEALSKIN_URL" ]; then
-    ARGS+=("$SEALSKIN_URL")
-fi
-
 # Start UI
 tint2 &
-libreoffice "${ARGS[@]}"
+libreoffice $SEALSKIN_FILE $SEALSKIN_URL

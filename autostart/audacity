@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-/opt/audacity/AppRun "${ARGS[@]}"
+/opt/audacity/AppRun $SEALSKIN_FILE $SEALSKIN_URL

@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("-r" "$SEALSKIN_FILE")
-fi
-
-wireshark "${ARGS[@]}"
+wireshark $SEALSKIN_FILE $SEALSKIN_URL

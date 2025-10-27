@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-/usr/bin/yaak-app "${ARGS[@]}"
+/usr/bin/yaak-app $SEALSKIN_FILE $SEALSKIN_URL

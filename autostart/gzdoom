@@ -10,11 +10,5 @@ if [ ! -f "${HOME}/.config/gzdoom/gzdoom.ini" ]; then
     "${HOME}/Desktop/"
 fi
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("-iwad" "$SEALSKIN_FILE")
-fi
-
 # Run GZDoom
-xterm -e /usr/games/gzdoom "${ARGS[@]}"
+xterm -e /usr/games/gzdoom $SEALSKIN_FILE $SEALSKIN_URL

@@ -11,12 +11,6 @@ NotFirstOpen=true
 common\\AcceptedEULA=true" > $HOME/.config/Kingsoft/Office.conf
 fi
 
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
 # Start UI
 tint2 &
-wps "${ARGS[@]}"
+wps $SEALSKIN_FILE $SEALSKIN_URL

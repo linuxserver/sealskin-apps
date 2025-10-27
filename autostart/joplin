@@ -1,7 +1,1 @@
-# Handle file opening
-ARGS=()
-if [ -n "$SEALSKIN_FILE" ]; then
-    ARGS+=("$SEALSKIN_FILE")
-fi
-
-joplin --no-sandbox "${ARGS[@]}"
+joplin --no-sandbox $SEALSKIN_FILE $SEALSKIN_URL
