@@ -1,0 +1,8 @@
+# Handle file opening
+ARGS=()
+if [ -n "$SEALSKIN_FILE" ]; then
+    ARGS+=("$SEALSKIN_FILE")
+fi
+
+# Start ONLYOFFICE
+/usr/bin/onlyoffice-desktopeditors "${ARGS[@]}"

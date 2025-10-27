@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Default folder
+if [[ ! -d "${HOME}/lsio" ]]; then
+  mkdir "${HOME}/lsio"
+fi
+
+# Handle file/URL opening
+ARGS=()
+if [ -n "$SEALSKIN_FILE" ]; then
+    ARGS+=("$SEALSKIN_FILE")
+elif [ -n "$SEALSKIN_URL" ]; then
+    ARGS+=("$SEALSKIN_URL")
+fi
+
+# Start app
+/app/Browser/mullvadbrowser-lsio "${ARGS[@]}"

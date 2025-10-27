@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Handle file opening
+ARGS=()
+if [ -n "$SEALSKIN_FILE" ]; then
+    ARGS+=("$SEALSKIN_FILE")
+fi
+
+# Run pcsx2
+xterm -e /usr/bin/pcsx2-qt "${ARGS[@]}"

@@ -1,0 +1,14 @@
+if [ "$(whoami)" != "abc" ]; then
+  sudo lsiown -R $(id -u):$(id -u) \
+    /opt/obsidian
+fi
+
+# Handle file/URL opening
+ARGS=()
+if [ -n "$SEALSKIN_FILE" ]; then
+    ARGS+=("$SEALSKIN_FILE")
+elif [ -n "$SEALSKIN_URL" ]; then
+    ARGS+=("$SEALSKIN_URL")
+fi
+
+obsidian "${ARGS[@]}"

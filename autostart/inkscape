@@ -1,0 +1,12 @@
+if [ ! -f $HOME/.config/inkscape/preferences.xml ]; then
+  mkdir -p $HOME/.config/inkscape
+  cp /defaults/preferences.xml $HOME/.config/inkscape/preferences.xml
+fi
+
+# Handle file opening
+ARGS=()
+if [ -n "$SEALSKIN_FILE" ]; then
+    ARGS+=("$SEALSKIN_FILE")
+fi
+
+inkscape "${ARGS[@]}"

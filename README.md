@@ -43,6 +43,7 @@ Each application is defined by a set of key-value pairs:
     *   `nvidia_support`: (Boolean) Set to `true` if the application can leverage NVIDIA GPUs for hardware acceleration.
     *   `dri3_support`: (Boolean) Set to `true` if the application can leverage Intel/AMD GPUs via DRI3 for hardware acceleration.
     *   `type`: (String) The category of the application. Can be `app`, `browser`, or `desktop`.
+    *   `autostart`: (Boolean) When set to `true`, the server will use a corresponding autostart script to launch the application within its desktop environment (e.g., Openbox). This allows for custom launch logic, such as passing file paths or URLs. If `false`, a default launch mechanism is assumed.
     *   `url_support`: (Boolean) Set to `true` if the application can be launched with a target URL (e.g., a web browser).
     *   `open_support`: (Boolean) Set to `true` if the application can be launched by opening a file. This is required for the `extensions` list to be meaningful.
     *   `extensions`: (List of Strings) A list of file extensions (without the leading dot) that this application can open. It is **highly recommended** to use aliases (`*group_name`) from `extension_groups` to populate this list.

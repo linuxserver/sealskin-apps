@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Add desktop file
+if [ ! -f "${HOME}/Desktop/dogwalk.desktop" ]; then
+  mkdir -p "${HOME}/Desktop" 
+  cp \
+    /defaults/dogwalk.desktop \
+    "${HOME}/Desktop/dogwalk.desktop"
+  chmod +x "${HOME}/Desktop/dogwalk.desktop"
+    mkdir -p "${HOME}/.config/libfm"
+  cp \
+    /defaults/libfm.conf \
+     "${HOME}/.config/libfm/"
+fi
+
+# Run desktop
+pcmanfm --desktop

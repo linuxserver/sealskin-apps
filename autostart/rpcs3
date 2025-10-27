@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Copy controller profile on first run
+if [ ! -f "${HOME}/.config/rpcs3/input_configs/global/Default.yml" ]; then
+  mkdir -p "${HOME}/.config/rpcs3/input_configs/global/"
+  cp \
+    /defaults/Default.yml \
+    "${HOME}/.config/rpcs3/input_configs/global/Default.yml"
+fi
+
+# Handle file opening
+ARGS=()
+if [ -n "$SEALSKIN_FILE" ]; then
+    ARGS+=("$SEALSKIN_FILE")
+fi
+
+# Run rpcs3
+/opt/rpcs3/AppRun "${ARGS[@]}"

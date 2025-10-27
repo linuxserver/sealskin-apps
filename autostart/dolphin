@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Copy default controller config
+if [ ! -f "${HOME}/.config/dolphin-emu/GCPadNew.ini" ]; then
+  mkdir -p "${HOME}/.config/dolphin-emu/"
+  cp /defaults/GCPadNew.ini "${HOME}/.config/dolphin-emu/"
+fi
+
+# Handle file opening
+ARGS=()
+if [ -n "$SEALSKIN_FILE" ]; then
+    ARGS+=("$SEALSKIN_FILE")
+fi
+
+xterm -e /usr/games/dolphin-emu ${DOLPHIN_CLI} "${ARGS[@]}"

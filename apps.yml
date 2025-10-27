@@ -107,6 +107,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions: []
@@ -121,6 +122,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -137,6 +139,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -153,10 +156,26 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
       - *cad_3d_files
+- id: "bitcoinknots"
+  name: "Bitcoin Knots"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bitcoin-knots-logo.png"
+  url: "https://github.com/linuxserver/docker-bitcoin-knots"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/bitcoin-knots:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: false
+    extensions: []
 - id: "blender"
   name: "Blender"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/blender-logo.png"
@@ -168,6 +187,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -188,6 +208,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -202,6 +223,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "browser"
+    autostart: true
     url_support: true
     open_support: false
     extensions: []
@@ -216,6 +238,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -232,6 +255,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -248,6 +272,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "browser"
+    autostart: true
     url_support: true
     open_support: false
     extensions: []
@@ -262,6 +287,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "browser"
+    autostart: true
     url_support: true
     open_support: false
     extensions: []
@@ -276,6 +302,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -292,6 +319,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -309,6 +337,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -325,6 +354,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -339,6 +369,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -357,6 +388,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -372,6 +404,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -387,6 +420,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -401,6 +435,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -415,6 +450,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "browser"
+    autostart: true
     url_support: true
     open_support: false
     extensions: []
@@ -429,6 +465,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -446,6 +483,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -462,6 +500,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -480,6 +519,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -494,6 +534,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -508,6 +549,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -525,6 +567,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -541,6 +584,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -557,6 +601,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -571,6 +616,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -589,6 +635,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -604,6 +651,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -621,6 +669,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -639,6 +688,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -657,6 +707,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "browser"
+    autostart: true
     url_support: true
     open_support: false
     extensions: []
@@ -671,6 +722,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -686,6 +738,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -703,6 +756,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -717,6 +771,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "browser"
+    autostart: true
     url_support: true
     open_support: false
     extensions: []
@@ -731,6 +786,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "browser"
+    autostart: true
     url_support: true
     open_support: false
     extensions: []
@@ -745,6 +801,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -761,6 +818,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -776,6 +834,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -794,6 +853,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "browser"
+    autostart: true
     url_support: true
     open_support: false
     extensions: []
@@ -808,6 +868,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -823,6 +884,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -837,6 +899,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -851,6 +914,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -868,6 +932,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -885,6 +950,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -912,6 +978,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -929,6 +996,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -943,6 +1011,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -961,6 +1030,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -975,6 +1045,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -993,6 +1064,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "browser"
+    autostart: true
     url_support: true
     open_support: false
     extensions: []
@@ -1007,6 +1079,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -1022,6 +1095,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -1036,6 +1110,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1050,6 +1125,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1064,6 +1140,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1078,6 +1155,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1092,6 +1170,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1106,6 +1185,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1120,6 +1200,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1134,6 +1215,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1148,6 +1230,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1162,6 +1245,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1176,6 +1260,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1190,6 +1275,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1204,6 +1290,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1218,6 +1305,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1232,6 +1320,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1246,6 +1335,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1260,6 +1350,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1274,6 +1365,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1288,6 +1380,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1302,6 +1395,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1316,6 +1410,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1330,6 +1425,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "desktop"
+    autostart: false
     url_support: false
     open_support: true
     extensions: []
@@ -1344,6 +1440,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -1361,6 +1458,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -1378,6 +1476,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:
@@ -1394,6 +1493,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -1408,6 +1508,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: false
     extensions: []
@@ -1422,6 +1523,7 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions:

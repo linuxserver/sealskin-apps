@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ ! -f "${HOME}/.config/gzdoom/gzdoom.ini" ]; then
+  mkdir -p "${HOME}/.config/gzdoom"
+  cp \
+    /defaults/gzdoom.ini \
+    "${HOME}/.config/gzdoom/gzdoom.ini"
+  cp \
+    /defaults/freedoom1.wad \
+    "${HOME}/Desktop/"
+fi
+
+# Handle file opening
+ARGS=()
+if [ -n "$SEALSKIN_FILE" ]; then
+    ARGS+=("-iwad" "$SEALSKIN_FILE")
+fi
+
+# Run GZDoom
+xterm -e /usr/games/gzdoom "${ARGS[@]}"

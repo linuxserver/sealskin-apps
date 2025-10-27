@@ -1,0 +1,10 @@
+#! /bin/bash
+xdg-mime default caja.desktop inode/directory
+
+# Handle URL opening
+ARGS=()
+if [ -n "$SEALSKIN_URL" ]; then
+    ARGS+=("$SEALSKIN_URL")
+fi
+
+dbus-launch github-desktop "${ARGS[@]}"
