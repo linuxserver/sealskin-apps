@@ -9,4 +9,4 @@ if [ ! -f "${HOME}/.config/rpcs3/input_configs/global/Default.yml" ]; then
 fi
 
 # Run rpcs3
-/opt/rpcs3/AppRun $SEALSKIN_FILE $SEALSKIN_URL
+/opt/rpcs3/AppRun "$SEALSKIN_FILE" "$SEALSKIN_URL"

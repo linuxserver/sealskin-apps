@@ -1,1 +1,1 @@
-doublecmd $SEALSKIN_FILE $SEALSKIN_URL
+doublecmd "$SEALSKIN_FILE" "$SEALSKIN_URL"

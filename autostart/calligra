@@ -8,4 +8,4 @@ fi
 
 # Start UI
 tint2 &
-calligra $SEALSKIN_FILE $SEALSKIN_URL
+calligra "$SEALSKIN_FILE" "$SEALSKIN_URL"

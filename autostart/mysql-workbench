@@ -1,1 +1,1 @@
-mysql-workbench $SEALSKIN_FILE $SEALSKIN_URL
+mysql-workbench "$SEALSKIN_FILE" "$SEALSKIN_URL"

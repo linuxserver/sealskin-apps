@@ -9,4 +9,4 @@ if [ ! -d "${HOME}/.config/retroarch" ]; then
   fi
 fi
 
-xterm -e /usr/bin/retroarch -f $SEALSKIN_FILE $SEALSKIN_URL
+xterm -e /usr/bin/retroarch -f "$SEALSKIN_FILE" "$SEALSKIN_URL"

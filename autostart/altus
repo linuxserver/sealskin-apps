@@ -1,1 +1,1 @@
-/opt/altus/Altus --no-sandbox $SEALSKIN_FILE $SEALSKIN_URL
+/opt/altus/Altus --no-sandbox "$SEALSKIN_FILE" "$SEALSKIN_URL"

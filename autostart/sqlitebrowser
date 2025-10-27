@@ -1,1 +1,1 @@
-sqlitebrowser $SEALSKIN_FILE $SEALSKIN_URL
+sqlitebrowser "$SEALSKIN_FILE" "$SEALSKIN_URL"

@@ -1,1 +1,1 @@
-/usr/bin/calibre $CLI_ARGS $SEALSKIN_FILE $SEALSKIN_URL
+/usr/bin/calibre $CLI_ARGS "$SEALSKIN_FILE" "$SEALSKIN_URL"

@@ -8,4 +8,4 @@ fi
 
 # Start UI
 tint2 &
-libreoffice $SEALSKIN_FILE $SEALSKIN_URL
+libreoffice "$SEALSKIN_FILE" "$SEALSKIN_URL"

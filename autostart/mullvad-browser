@@ -6,4 +6,4 @@ if [[ ! -d "${HOME}/lsio" ]]; then
 fi
 
 # Start app
-/app/Browser/mullvadbrowser-lsio $SEALSKIN_FILE $SEALSKIN_URL
+/app/Browser/mullvadbrowser-lsio "$SEALSKIN_FILE" "$SEALSKIN_URL"

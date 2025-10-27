@@ -1,2 +1,2 @@
 # Start ONLYOFFICE
-/usr/bin/onlyoffice-desktopeditors $SEALSKIN_FILE $SEALSKIN_URL
+/usr/bin/onlyoffice-desktopeditors "$SEALSKIN_FILE" "$SEALSKIN_URL"

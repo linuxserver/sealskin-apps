@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Run Flycast
-xterm -e /opt/flycast/AppRun $SEALSKIN_FILE $SEALSKIN_URL
+xterm -e /opt/flycast/AppRun "$SEALSKIN_FILE" "$SEALSKIN_URL"

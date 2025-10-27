@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Run DuckStation
-xterm -e /opt/duckstation/AppRun $SEALSKIN_FILE $SEALSKIN_URL
+xterm -e /opt/duckstation/AppRun "$SEALSKIN_FILE" "$SEALSKIN_URL"

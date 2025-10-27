@@ -1,4 +1,4 @@
 #! /bin/bash
 xdg-mime default caja.desktop inode/directory
 
-dbus-launch github-desktop $SEALSKIN_FILE $SEALSKIN_URL
+dbus-launch github-desktop "$SEALSKIN_FILE" "$SEALSKIN_URL"

@@ -1,1 +1,1 @@
-joplin --no-sandbox $SEALSKIN_FILE $SEALSKIN_URL
+joplin --no-sandbox "$SEALSKIN_FILE" "$SEALSKIN_URL"

@@ -3,4 +3,4 @@ if [ ! -f $HOME/.config/inkscape/preferences.xml ]; then
   cp /defaults/preferences.xml $HOME/.config/inkscape/preferences.xml
 fi
 
-inkscape $SEALSKIN_FILE $SEALSKIN_URL
+inkscape "$SEALSKIN_FILE" "$SEALSKIN_URL"

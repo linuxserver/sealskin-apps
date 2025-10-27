@@ -1,1 +1,1 @@
-/app/shotcut/shotcut $SEALSKIN_FILE $SEALSKIN_URL
+/app/shotcut/shotcut "$SEALSKIN_FILE" "$SEALSKIN_URL"

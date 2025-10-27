@@ -1,1 +1,1 @@
-ferdium --no-sandbox $SEALSKIN_FILE $SEALSKIN_URL
+ferdium --no-sandbox "$SEALSKIN_FILE" "$SEALSKIN_URL"

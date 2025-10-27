@@ -8,4 +8,4 @@ fi
 
 # Start UI
 tint2 &
-zotero $SEALSKIN_FILE $SEALSKIN_URL
+zotero "$SEALSKIN_FILE" "$SEALSKIN_URL"

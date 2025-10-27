@@ -1,1 +1,1 @@
-PYTHONHOME=/opt/krita/usr krita $SEALSKIN_FILE $SEALSKIN_URL
+PYTHONHOME=/opt/krita/usr krita "$SEALSKIN_FILE" "$SEALSKIN_URL"
