@@ -7,4 +7,4 @@ elif [ "${DARK_MODE}" != "true" ] && [ -f "$HOME/.config/gtk-3.0/settings.ini" ]
   rm -f "$HOME/.config/gtk-3.0/settings.ini"
 fi
 
-/opt/bambustudio/AppRun "$SEALSKIN_FILE" "$SEALSKIN_URL"
+/opt/bambustudio/AppRun ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

@@ -1507,9 +1507,9 @@ apps:
     port: 3000
     nvidia_support: true
     dri3_support: true
-    type: "app"
+    type: "browser"
     autostart: true
-    url_support: false
+    url_support: true
     open_support: false
     extensions: []
 - id: "zotero"

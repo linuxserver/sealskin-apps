@@ -1,3 +1,3 @@
 #!/bin/bash
 
-wrapped-chromium ${CHROME_CLI} "$SEALSKIN_FILE" "$SEALSKIN_URL"
+wrapped-chromium ${CHROME_CLI} ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

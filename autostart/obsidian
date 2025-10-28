@@ -3,4 +3,4 @@ if [ "$(whoami)" != "abc" ]; then
     /opt/obsidian
 fi
 
-obsidian "$SEALSKIN_FILE" "$SEALSKIN_URL"
+obsidian ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

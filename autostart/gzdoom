@@ -11,4 +11,4 @@ if [ ! -f "${HOME}/.config/gzdoom/gzdoom.ini" ]; then
 fi
 
 # Run GZDoom
-xterm -e /usr/games/gzdoom "$SEALSKIN_FILE" "$SEALSKIN_URL"
+xterm -e /usr/games/gzdoom ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

@@ -1,1 +1,1 @@
-dbus-launch kdenlive "$SEALSKIN_FILE" "$SEALSKIN_URL"
+dbus-launch kdenlive ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
