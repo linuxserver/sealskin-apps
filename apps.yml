@@ -291,6 +291,22 @@ apps:
     url_support: true
     open_support: false
     extensions: []
+- id: "citron"
+  name: "Citron"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/citron-logo.png"
+  url: "https://github.com/linuxserver/docker-citron"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/citron:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions:
+      - nsp
 - id: "cura"
   name: "Cura"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cura-logo.png"
@@ -1426,6 +1442,21 @@ apps:
     dri3_support: true
     type: "desktop"
     autostart: false
+    url_support: false
+    open_support: true
+    extensions: []
+- id: "weixin"
+  name: "Weixin"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/weixin-logo.png"
+  url: "https://github.com/linuxserver/docker-weixin"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/weixin:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
     url_support: false
     open_support: true
     extensions: []
