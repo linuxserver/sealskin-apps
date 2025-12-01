@@ -145,6 +145,30 @@ apps:
     extensions:
       - aup3
       - *audio_files
+- id: "azahar"
+  name: "Azahar"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/azahar-logo.png"
+  url: "https://github.com/linuxserver/docker-azahar"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/azahar:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions:
+      - 3dsx
+      - elf
+      - axf
+      - cci
+      - cxi
+      - app
+      - zcci
+      - zcxi
+      - cia
 - id: "bambustudio"
   name: "BambuStudio"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bambustudio-logo.png"
@@ -393,6 +417,21 @@ apps:
       - wbfs
       - rvz
       - *disc_image_files
+- id: "dosbox-staging"
+  name: "DOSBox Staging"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dosbox-logo.png"
+  url: "https://github.com/linuxserver/docker-dosbox-staging"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/dosbox-staging:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions: []
 - id: "doublecommander"
   name: "DoubleCommander"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png"
@@ -572,6 +611,23 @@ apps:
       - wad
       - pk3
       - iwad
+- id: "handbrake"
+  name: "HandBrake"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/handbrake-logo.png"
+  url: "https://github.com/linuxserver/docker-handbrake"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/handbrake:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions:
+      - *video_files
+      - *audio_files
 - id: "inkscape"
   name: "Inkscape"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/inkscape-logo.png"
@@ -776,6 +832,23 @@ apps:
     url_support: false
     open_support: false
     extensions: []
+- id: "melonds"
+  name: "melonDS"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/melonds-logo.png"
+  url: "https://github.com/linuxserver/docker-melonds"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/melonds:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: false
+    extensions:
+      - zip
+      - nds
 - id: "msedge"
   name: "MSEdge"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/edge-logo.png"

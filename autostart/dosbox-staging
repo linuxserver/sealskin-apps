@@ -1,0 +1,19 @@
+#!/bin/bash
+
+CONFIG="${HOME}/.config/dosbox/dosbox-staging.conf"
+if [ ! -f "${CONFIG}" ]; then
+  mkdir -p "${HOME}/.config/dosbox"
+  echo "[sdl]" > "${CONFIG}"
+  echo "fullscreen=true" >> "${CONFIG}"
+  echo "output=texture" >> "${CONFIG}"
+  echo "texture_renderer=software" >> "${CONFIG}"
+  echo "[autoexec]" >> "${CONFIG}"
+  echo "@ECHO OFF" >> "${CONFIG}"
+  echo "MOUNT C ${HOME}/Desktop" >> "${CONFIG}"
+  echo "C:" >> "${CONFIG}"
+  echo "ECHO Drag and Drop files to run them" >> "${CONFIG}"
+  echo "ECHO Your current location is ${HOME}/Desktop" >> "${CONFIG}"
+  echo "ECHO Use the command RESCAN to read new files" >> "${CONFIG}"
+fi
+
+xterm -e /opt/dosbox/dosbox

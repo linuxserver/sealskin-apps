@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ ! -f "${HOME}/.config/azahar-emu/qt-config.ini" ]; then
+  mkdir -p "${HOME}/.config/azahar-emu/"
+  cp /defaults/qt-config.ini "${HOME}/.config/azahar-emu/"
+fi
+
+xterm -e /usr/sbin/azahar ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
