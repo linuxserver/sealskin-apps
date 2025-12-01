@@ -1157,6 +1157,21 @@ apps:
     url_support: true
     open_support: false
     extensions: []
+- id: "vivaldi"
+  name: "Vivaldi"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vivaldi-logo.png"
+  url: "https://github.com/linuxserver/docker-vivaldi"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/vivaldi:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    autostart: true
+    url_support: true
+    open_support: false
+    extensions: []
 - id: "vscodium"
   name: "VSCodium"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscodium-icon.png"
