@@ -1224,7 +1224,7 @@ apps:
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
-    image: "lscr.io/linuxserver/webtop:kde-alpine"
+    image: "lscr.io/linuxserver/webtop:alpine-kde"
     port: 3000
     nvidia_support: false
     dri3_support: true
