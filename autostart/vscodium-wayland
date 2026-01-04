@@ -1,0 +1,2 @@
+#! /bin/bash
+dbus-launch codium ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

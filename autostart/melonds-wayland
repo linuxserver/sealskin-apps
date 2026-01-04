@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ ! -f "${HOME}/.config/melonDS/melonDS.toml" ]; then
+  mkdir -p "${HOME}/.config/melonDS/"
+  cp /defaults/melonDS.toml "${HOME}/.config/melonDS/"
+fi
+
+xterm -e /usr/bin/melonDS ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Run xemu
+foot -e /opt/xemu/AppRun ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Run Dogwalk
+/opt/dogwalk-linux/run.sh

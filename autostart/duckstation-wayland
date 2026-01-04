@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Run DuckStation
+foot -e /opt/duckstation/AppRun ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

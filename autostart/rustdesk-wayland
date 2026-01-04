@@ -1,0 +1,2 @@
+#!/bin/bash
+rustdesk ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

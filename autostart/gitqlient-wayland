@@ -1,0 +1,2 @@
+#! /bin/bash
+gitqlient ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Run Flycast
+foot -e /opt/flycast/AppRun ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
