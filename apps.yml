@@ -849,6 +849,21 @@ apps:
     extensions:
       - zip
       - nds
+- id: "modrinth"
+  name: "Modrinth"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/modrinth-logo.png"
+  url: "https://github.com/linuxserver/docker-modrinth"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/modrinth:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: false
+    extensions: []
 - id: "msedge"
   name: "MSEdge"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/edge-logo.png"
