@@ -961,6 +961,22 @@ apps:
     url_support: true
     open_support: false
     extensions: []
+- id: "orcaslicer"
+  name: "OrcaSlicer"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/orcaslicer-logo.png"
+  url: "https://github.com/linuxserver/docker-orcaslicer"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/orcaslicer:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions:
+      - *cad_3d_files
 - id: "pcsx2"
   name: "PCSX2"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pcsx2-logo.png"
