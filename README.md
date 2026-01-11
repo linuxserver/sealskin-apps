@@ -47,3 +47,4 @@ Each application is defined by a set of key-value pairs:
     *   `url_support`: (Boolean) Set to `true` if the application can be launched with a target URL (e.g., a web browser).
     *   `open_support`: (Boolean) Set to `true` if the application can be launched by opening a file. This is required for the `extensions` list to be meaningful.
     *   `extensions`: (List of Strings) A list of file extensions (without the leading dot) that this application can open. It is **highly recommended** to use aliases (`*group_name`) from `extension_groups` to populate this list.
+    *   `docker_overrides`: (Object) Optional. A dictionary of specific Docker run parameters to override or append during container launch. This is useful for advanced configurations like `shm_size`, `cap_add`, or `security_opt`.

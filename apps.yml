@@ -1173,6 +1173,25 @@ apps:
       - sqlite
       - sqlite3
       - db3
+- id: "steam"
+  name: "Steam"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/steam-logo.png"
+  url: "https://github.com/linuxserver/docker-steam"
+  provider: "docker"
+  provider_config:
+    image: "lsiodev/steam:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions: []
+    docker_overrides:
+      security_opt:
+        - "seccomp=unconfined"
+        - "apparmor=unconfined"
 - id: "ungoogled-chromium"
   name: "Ungoogled Chromium"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ungoogled-chromium-logo.png"
