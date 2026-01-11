@@ -1179,7 +1179,7 @@ apps:
   url: "https://github.com/linuxserver/docker-steam"
   provider: "docker"
   provider_config:
-    image: "lsiodev/steam:latest"
+    image: "lscr.io/linuxserver/steam:latest"
     port: 3000
     nvidia_support: true
     dri3_support: true
