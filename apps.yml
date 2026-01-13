@@ -1008,6 +1008,25 @@ apps:
     url_support: false
     open_support: false
     extensions: []
+- id: "ppsspp"
+  name: "PPSSPP"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ppsspp-logo.png"
+  url: "https://github.com/linuxserver/docker-ppsspp"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/ppsspp:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions:
+      - *disc_image_files
+      - pbp
+      - chd
+      - cso
 - id: "qdirstat"
   name: "QDirStat"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qdirstat-logo.png"

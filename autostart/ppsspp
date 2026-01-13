@@ -1,0 +1,7 @@
+# default config copy
+if [ ! -f "$HOME/.config/ppsspp/PSP/SYSTEM/ppsspp.ini" ]; then
+  mkdir -p "$HOME/.config/ppsspp/PSP/SYSTEM"
+  cp /defaults/ppsspp.ini "$HOME/.config/ppsspp/PSP/SYSTEM/ppsspp.ini"
+fi
+
+xterm -e /usr/sbin/PPSSPPQt ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
