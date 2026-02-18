@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ ! -f "${HOME}/.config/eden/qt-config.ini" ]; then
+  mkdir -p "${HOME}/.config/eden/"
+  cp /defaults/qt-config.ini "${HOME}/.config/eden/"
+fi
+
+foot -e eden ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

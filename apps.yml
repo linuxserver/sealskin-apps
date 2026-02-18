@@ -464,6 +464,22 @@ apps:
     open_support: true
     extensions:
       - *disc_image_files
+- id: "eden"
+  name: "Eden"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/eden-logo.png"
+  url: "https://github.com/linuxserver/docker-eden"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/eden:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions: 
+      - nsp
 - id: "ferdium"
   name: "Ferdium"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ferdium-logo.png"
