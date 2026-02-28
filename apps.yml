@@ -1155,6 +1155,21 @@ apps:
     url_support: false
     open_support: false
     extensions: []
+- id: "shadps4"
+  name: "shadPS4"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/shadps4-logo.png"
+  url: "https://github.com/linuxserver/docker-shadps4"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/shadps4:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions: []
 - id: "shotcut"
   name: "Shotcut"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/shotcut-logo.png"
@@ -1284,6 +1299,21 @@ apps:
     nvidia_support: true
     dri3_support: true
     type: "app"
+    autostart: true
+    url_support: false
+    open_support: false
+    extensions: []
+- id: "webstation"
+  name: "Webstation"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webstation-logo.png"
+  url: "https://github.com/linuxserver/docker-webstation"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webstation:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
     autostart: true
     url_support: false
     open_support: false

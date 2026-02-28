@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Default files
+if [ ! -d "$HOME/.local/share/shadPS4" ]; then
+  mkdir -p "$HOME/.local/share/shadPS4"
+  cp \
+    /defaults/config.toml \
+    "$HOME/.local/share/shadPS4/"
+fi
+
+xterm -e /opt/shadps4/AppRun ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
