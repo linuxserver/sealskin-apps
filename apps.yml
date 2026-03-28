@@ -1272,6 +1272,22 @@ apps:
     url_support: true
     open_support: false
     extensions: []
+- id: "vscode"
+  name: "VSCode"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscode-logo.png"
+  url: "https://github.com/linuxserver/docker-vscode"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/vscode:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions:
+      - *code_files
 - id: "vscodium"
   name: "VSCodium"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscodium-icon.png"
