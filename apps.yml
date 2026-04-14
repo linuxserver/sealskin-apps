@@ -200,6 +200,21 @@ apps:
     url_support: false
     open_support: false
     extensions: []
+- id: "blade-of-agony"
+  name: "Blade of Agony"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/boa-logo.png"
+  url: "https://github.com/linuxserver/docker-blade-of-agony"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/blade-of-agony:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: false
+    extensions: []
 - id: "blender"
   name: "Blender"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/blender-logo.png"
