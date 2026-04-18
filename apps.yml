@@ -643,6 +643,21 @@ apps:
     extensions:
       - *video_files
       - *audio_files
+- id: "helium"
+  name: "Helium"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/helium-logo.png"
+  url: "https://github.com/linuxserver/docker-helium"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/helium:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "browser"
+    autostart: true
+    url_support: true
+    open_support: false
+    extensions: []
 - id: "inkscape"
   name: "Inkscape"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/inkscape-logo.png"
