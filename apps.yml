@@ -1708,6 +1708,21 @@ apps:
     url_support: false
     open_support: true
     extensions: []
+- id: "winegui"
+  name: "WinGUI"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/winegui-logo.png"
+  url: "https://github.com/linuxserver/docker-winegui"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/winegui:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions: []
 - id: "wireshark"
   name: "Wireshark"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireshark-icon.png"

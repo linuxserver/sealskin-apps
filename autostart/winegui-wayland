@@ -1,0 +1,11 @@
+#! /bin/bash
+
+if [ ! -f "${HOME}/Desktop/winegui.desktop" ]; then
+  cp /usr/share/applications/winegui.desktop "${HOME}/Desktop/"
+fi
+
+touch "${HOME}/.config/panel-reload"
+gio mime inode/directory caja-browser.desktop
+gio mime application/x-terminal-emulator foot.desktop
+
+winegui ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
