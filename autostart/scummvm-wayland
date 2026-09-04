@@ -1,0 +1,2 @@
+#!/bin/bash
+foot -e /usr/games/scummvm ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
