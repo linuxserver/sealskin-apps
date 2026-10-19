@@ -332,6 +332,21 @@ apps:
     extensions:
       - *open_document_files
       - *ms_office_files
+- id: "craft-apps"
+  name: "Craft Apps"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/artcraft-logo.png"
+  url: "https://github.com/linuxserver/docker-craft-apps"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/craft-apps:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "desktop"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions: []
 - id: "chrome"
   name: "Chrome"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chrome-logo.png"
@@ -1004,6 +1019,24 @@ apps:
     extensions:
       - mwb
       - sql
+- id: "nomacs"
+  name: "Nomacs"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nomacs-logo.png"
+  url: "https://github.com/linuxserver/docker-nomacs"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/nomacs:latest"
+    port: 3000
+    nvidia_support: true
+    dri3_support: true
+    type: "app"
+    autostart: true
+    url_support: false
+    open_support: true
+    extensions:
+      - psd
+      - *common_image_files
+      - *raw_image_files
 - id: "obsidian"
   name: "Obsidian"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/obsidian-logo.png"
@@ -1351,7 +1384,7 @@ apps:
     extensions: []
 - id: "sqlitebrowser"
   name: "SQLiteBrowser"
-  logo: "https://raw.githubusercontent.com/linuxserver/proot-apps/refs/heads/master/metadata/img/sqlitebrowser-icon.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sqlitebrowser-logo.png"
   url: "https://github.com/linuxserver/docker-sqlitebrowser"
   provider: "docker"
   provider_config:

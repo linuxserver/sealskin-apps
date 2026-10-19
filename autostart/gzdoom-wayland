@@ -12,4 +12,4 @@ fi
 
 
 # Run GZDoom
-foot -e /usr/games/gzdoom ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
+/usr/games/gzdoom ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

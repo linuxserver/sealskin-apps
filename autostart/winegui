@@ -1,3 +1,10 @@
 #! /bin/bash
-xdg-mime default caja.desktop inode/directory
+
+if [ ! -f "${HOME}/Desktop/winegui.desktop" ]; then
+  cp /usr/share/applications/winegui.desktop "${HOME}/Desktop/"
+fi
+
+touch "${HOME}/.config/panel-reload"
+gio mime inode/directory caja-browser.desktop
+
 winegui ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

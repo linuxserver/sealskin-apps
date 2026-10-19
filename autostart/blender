@@ -1,1 +1,1 @@
-DRI_PRIME=1 blender ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
+blender --python-expr "import bpy; bpy.context.preferences.inputs.use_mouse_continuous = False" ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

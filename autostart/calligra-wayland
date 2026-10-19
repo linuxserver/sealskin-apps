@@ -1,3 +1,15 @@
 #!/bin/bash
 
-calligrawords
+if [ ! -f "${HOME}/Desktop/org.kde.calligra.words.desktop" ]; then
+  cp /usr/share/applications/org.kde.calligra.words.desktop "${HOME}/Desktop/"
+  cp /usr/share/applications/org.kde.calligra.karbon.desktop "${HOME}/Desktop/"
+  cp /usr/share/applications/org.kde.calligraplan.desktop "${HOME}/Desktop/"
+  cp /usr/share/applications/org.kde.calligraplanwork.desktop "${HOME}/Desktop/"
+  cp /usr/share/applications/org.kde.calligra.sheets.desktop "${HOME}/Desktop/"
+  cp /usr/share/applications/org.kde.calligra.stage.desktop "${HOME}/Desktop/"
+  cp /usr/share/applications/org.kde.kexi-3.2.desktop "${HOME}/Desktop/"
+fi
+
+touch "${HOME}/.config/panel-reload"
+
+calligrawords ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

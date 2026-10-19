@@ -1,2 +1,2 @@
 #!/bin/bash
-xterm -e /usr/games/scummvm -f ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
+/usr/games/scummvm ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

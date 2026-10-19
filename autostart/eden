@@ -5,4 +5,4 @@ if [ ! -f "${HOME}/.config/eden/qt-config.ini" ]; then
   cp /defaults/qt-config.ini "${HOME}/.config/eden/"
 fi
 
-xterm -e eden ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
+eden ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

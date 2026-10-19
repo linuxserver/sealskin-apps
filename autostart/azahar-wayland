@@ -5,4 +5,4 @@ if [ ! -f "${HOME}/.config/azahar-emu/qt-config.ini" ]; then
   cp /defaults/qt-config.ini "${HOME}/.config/azahar-emu/"
 fi
 
-foot -e /usr/sbin/azahar ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
+/usr/sbin/azahar ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

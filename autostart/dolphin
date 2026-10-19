@@ -7,4 +7,4 @@ if [ ! -f "${HOME}/.config/dolphin-emu/GCPadNew.ini" ]; then
   cp /defaults/Dolphin.ini "${HOME}/.config/dolphin-emu/"
 fi
 
-xterm -e /usr/games/dolphin-emu ${DOLPHIN_CLI} ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
+/usr/games/dolphin-emu ${DOLPHIN_CLI} ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

@@ -1,2 +1,3 @@
 #! /bin/bash
+
 dbus-launch code ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

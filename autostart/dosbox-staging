@@ -16,4 +16,4 @@ if [ ! -f "${CONFIG}" ]; then
   echo "ECHO Use the command RESCAN to read new files" >> "${CONFIG}"
 fi
 
-xterm -e /opt/dosbox/dosbox
+xterm -e /opt/dosbox/dosbox ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

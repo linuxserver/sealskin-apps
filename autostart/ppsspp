@@ -4,4 +4,4 @@ if [ ! -f "$HOME/.config/ppsspp/PSP/SYSTEM/ppsspp.ini" ]; then
   cp /defaults/ppsspp.ini "$HOME/.config/ppsspp/PSP/SYSTEM/ppsspp.ini"
 fi
 
-xterm -e /usr/sbin/PPSSPPQt ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
+/usr/sbin/PPSSPPQt ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}

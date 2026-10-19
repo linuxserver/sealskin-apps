@@ -8,4 +8,4 @@ if [ ! -d "$HOME/.local/share/shadPS4" ]; then
     "$HOME/.local/share/shadPS4/"
 fi
 
-foot -e /opt/shadps4/AppRun ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
+/opt/shadps4/AppRun ${SEALSKIN_FILE:+"$SEALSKIN_FILE"} ${SEALSKIN_URL:+"$SEALSKIN_URL"}
