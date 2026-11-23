@@ -1567,14 +1567,14 @@ apps:
     open_support: false
     extensions: []
 - id: "webtop-xfce-alpine"
-  name: "XFCE Alpine"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  name: "Selkies Ubuntu"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-ubuntu-selkies.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
     image: "lscr.io/linuxserver/webtop:latest"
     port: 3000
-    nvidia_support: false
+    nvidia_support: true
     dri3_support: true
     type: "desktop"
     autostart: false
@@ -1583,7 +1583,7 @@ apps:
     extensions: []
 - id: "webtop-kde-alpine"
   name: "KDE Alpine"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-alpine-kde.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1598,7 +1598,7 @@ apps:
     extensions: []
 - id: "webtop-alpine-i3"
   name: "i3 Alpine"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-alpine-i3.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1613,7 +1613,7 @@ apps:
     extensions: []
 - id: "webtop-alpine-mate"
   name: "MATE Alpine"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-alpine-mate.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1626,9 +1626,24 @@ apps:
     url_support: false
     open_support: true
     extensions: []
+- id: "webtop-alpine-xfce"
+  name: "XFCE Alpine"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-alpine-xfce.png"
+  url: "https://github.com/linuxserver/docker-webtop"
+  provider: "docker"
+  provider_config:
+    image: "lscr.io/linuxserver/webtop:alpine-xfce"
+    port: 3000
+    nvidia_support: false
+    dri3_support: true
+    type: "desktop"
+    autostart: false
+    url_support: false
+    open_support: true
+    extensions: []
 - id: "webtop-arch-i3"
   name: "i3 Arch"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-arch-i3.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1643,7 +1658,7 @@ apps:
     extensions: []
 - id: "webtop-arch-kde"
   name: "KDE Arch"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-arch-kde.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1658,7 +1673,7 @@ apps:
     extensions: []
 - id: "webtop-arch-mate"
   name: "MATE Arch"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-arch-mate.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1673,7 +1688,7 @@ apps:
     extensions: []
 - id: "webtop-arch-xfce"
   name: "XFCE Arch"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-arch-xfce.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1688,7 +1703,7 @@ apps:
     extensions: []
 - id: "webtop-debian-i3"
   name: "i3 Debian"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-debian-i3.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1703,7 +1718,7 @@ apps:
     extensions: []
 - id: "webtop-debian-kde"
   name: "KDE Debian"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-debian-kde.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1718,7 +1733,7 @@ apps:
     extensions: []
 - id: "webtop-debian-mate"
   name: "MATE Debian"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-debian-mate.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1733,7 +1748,7 @@ apps:
     extensions: []
 - id: "webtop-debian-xfce"
   name: "XFCE Debian"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-debian-xfce.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1793,7 +1808,7 @@ apps:
     extensions: []
 - id: "webtop-fedora-i3"
   name: "i3 Fedora"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-fedora-i3.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1808,7 +1823,7 @@ apps:
     extensions: []
 - id: "webtop-fedora-kde"
   name: "KDE Fedora"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-fedora-kde.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1823,7 +1838,7 @@ apps:
     extensions: []
 - id: "webtop-fedora-mate"
   name: "MATE Fedora"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-fedora-mate.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1838,7 +1853,7 @@ apps:
     extensions: []
 - id: "webtop-fedora-xfce"
   name: "XFCE Fedora"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-fedora-xfce.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1853,7 +1868,7 @@ apps:
     extensions: []
 - id: "webtop-ubuntu-i3"
   name: "i3 Ubuntu"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-ubuntu-i3.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1868,7 +1883,7 @@ apps:
     extensions: []
 - id: "webtop-ubuntu-kde"
   name: "KDE Ubuntu"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-ubuntu-kde.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1882,8 +1897,8 @@ apps:
     open_support: true
     extensions: []
 - id: "webtop-ubuntu-kde-dev"
-  name: "KDE Ubuntu (Dev)"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  name: "Selkies Ubuntu (Dev)"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-ubuntu-selkies.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1898,7 +1913,7 @@ apps:
     extensions: []
 - id: "webtop-ubuntu-mate"
   name: "MATE Ubuntu"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-ubuntu-mate.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
@@ -1913,7 +1928,7 @@ apps:
     extensions: []
 - id: "webtop-ubuntu-xfce"
   name: "XFCE Ubuntu"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
+  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-ubuntu-xfce.png"
   url: "https://github.com/linuxserver/docker-webtop"
   provider: "docker"
   provider_config:
