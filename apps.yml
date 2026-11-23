@@ -1761,51 +1761,6 @@ apps:
     url_support: false
     open_support: true
     extensions: []
-- id: "webtop-el-i3"
-  name: "i3 Enterprise Linux"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
-  url: "https://github.com/linuxserver/docker-webtop"
-  provider: "docker"
-  provider_config:
-    image: "lscr.io/linuxserver/webtop:el-i3"
-    port: 3000
-    nvidia_support: true
-    dri3_support: true
-    type: "desktop"
-    autostart: false
-    url_support: false
-    open_support: true
-    extensions: []
-- id: "webtop-el-mate"
-  name: "MATE Enterprise Linux"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
-  url: "https://github.com/linuxserver/docker-webtop"
-  provider: "docker"
-  provider_config:
-    image: "lscr.io/linuxserver/webtop:el-mate"
-    port: 3000
-    nvidia_support: true
-    dri3_support: true
-    type: "desktop"
-    autostart: false
-    url_support: false
-    open_support: true
-    extensions: []
-- id: "webtop-el-xfce"
-  name: "XFCE Enterprise Linux"
-  logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png"
-  url: "https://github.com/linuxserver/docker-webtop"
-  provider: "docker"
-  provider_config:
-    image: "lscr.io/linuxserver/webtop:el-xfce"
-    port: 3000
-    nvidia_support: true
-    dri3_support: true
-    type: "desktop"
-    autostart: false
-    url_support: false
-    open_support: true
-    extensions: []
 - id: "webtop-fedora-i3"
   name: "i3 Fedora"
   logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-fedora-i3.png"
